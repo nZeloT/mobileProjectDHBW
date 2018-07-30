@@ -2,8 +2,8 @@
 
 ## Links 
 - Präsentation 
-- ![Frontend](https://github.com/GehirnWabbel/mobileProjectFrontend)
-- ![Backend](https://github.com/benni1371/mobileProjectBackend)
+- [Frontend](https://github.com/GehirnWabbel/mobileProjectFrontend)
+- [Backend](https://github.com/benni1371/mobileProjectBackend)
 
 ## Konzept
 
