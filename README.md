@@ -1,7 +1,7 @@
 # RaceManager
 
 ## Links 
-- [HTML5-Präsentation](./presentation/index.html)
+- [HTML5-Präsentation](http://htmlpreview.github.com/?https://github.com/benni1371/mobileProjectDHBW/blob/master/presentation/index.html)
 - [Frontend](https://github.com/GehirnWabbel/mobileProjectFrontend)
 - [Backend](https://github.com/benni1371/mobileProjectBackend)
 
