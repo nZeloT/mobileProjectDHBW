@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Racemanager</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			
+			<div class="slides">
+				<section data-background-image="https://media.giphy.com/media/3o751ZrLWPxq9ZQQla/giphy.gif" data-background-repeat="repeat">
+					<h1 style="color: white">Racemanager</h1>
+					<h3 style="color: white">Rennplanung und Teamverwaltung für Kartrennen</h3>
+					<p style="color: white">
+						<small>
+							Philipp Drayß, Benjamin Hilprecht, Henrik Müller, Leon Steiner in Kooperation mit needracing.com
+						</small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Probleme bei <br><img src="img/logo_nr_black.png" class="plain" alt="Websocket" width="50%"></h2>
+					<ul>
+						<li>
+							<p>Bei Kartrennen treten Teams gegeneinander an. Dabei müssen die Teilnehmer</p>
+							<div class="ulist">
+								<ul>
+									<li>Fahreinsätze (Stints) planen und auf Unfälle, Unterbrechungen und schlechte Wetterverhältnisse reagieren</li>
+									<li>Rennprotokolle führen</li>
+									<li>Maximal- und Minimalfahrtzeiten berücksichtigen</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Die Lösung: Racemanager</h2>
+					<div class="ulist">
+						<img src="img/logo.png" class="plain" width="20%" style="float: right">
+						<ul style="width: 70%;">
+							<li>Verwalten von Rennen/Events des Teams und der Mitglieder</li>
+							<li>Planung der Stints für die Zukunft</li>
+							<li>Automatische Generierung von Rennprotokollen</li>
+							<li>Statistiken über Rennzeiten und Stints</li>
+							<li>Benachrichtigungen für Fahrer bei bevorstehendem Stint</li>
+						</ul>
+					</div>
+				</section>
+
+				<section data-background="#e52420">
+						<h1>Funktionen</h1>
+				</section>
+
+				<video>
+						<source data-src="video.webm" type="video/webm" />
+						<source data-src="video.mp4" type="video/mp4" />
+					  </video>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>TODO: Team verwalten</h2>
+						<div class="ulist">
+							<video data-autoplay src="https://media.giphy.com/media/3o85xnoIXebk3xYx4Q/giphy.mp4" width="40%" data-background-repeat="repeat" style="float: right"></video>
+
+							<ul style="width: 40%;">
+								<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, </li>
+								<li>sed diam nonumy eirmod tempor invidunt ut labore et dolo</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<h2>Basement Level 1</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+					<section>
+						<h2>Basement Level 2</h2>
+						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Realisierung</h2>
+					<ul>
+						<li>Backend
+							<ul>
+								<li>REST-Api als Schnittstelle</li>
+								<li>Anbindung an OneSignal für Benachrichtigungen</li>
+								<li>Node.js mit Express-Server</li>
+								<li>MongoDB zur Datenhaltung</li>
+							</ul>
+						</li>
+						<li>Frontend
+							<ul>
+								<li>Ionic (Version 3)</li>
+								<li>Aufruf im Browser möglich</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Mobile-Funktionalitäten</h2>
+					<div class="ulist">
+						<img src="img/logo.png" class="plain" width="20%" style="float: right">
+						<ul style="width: 70%;">
+							<li>Universal-Links zum Einladen von Usern</li>
+							<li>Sharing der Universal-Links</li>
+							<li>Navigation zum Rennort</li>
+							<li>Benachrichtigung von Fahrern, die in Kürze einen Stint fahren</li>
+						</ul>
+					</div>
+				</section>
+
+				<section data-background-image="https://media.giphy.com/media/3o751ZrLWPxq9ZQQla/giphy.gif" data-background-repeat="repeat">
+					<h1 style="color: white">Viel Spaß <br> beim Ausprobieren</h1>
+				</section>
+			</div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
